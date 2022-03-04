@@ -37,3 +37,8 @@ time, since it will be re-created by any script that creates output files in it.
 Additional output formats can be supported. Because [GraphQL](https://graphql.org/) is under consideration
 as a [PACE](https://github.com/opencybersecurityalliance/PACE) interface,
 a [GraphQL Schema](https://graphql.org/learn/schema/) translator is being developed.
+
+### 2.2 Resolve Schemas
+![resolver](Images/resolver.png)
+
+### 2.3 Test Commands

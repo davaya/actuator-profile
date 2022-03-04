@@ -47,5 +47,8 @@ if __name__ == '__main__':
     css_dir = os.path.join(OUTPUT_DIR, 'css')
     os.makedirs(css_dir, exist_ok=True)
     shutil.copy(os.path.join(jadn.data_dir(), 'dtheme.css'), css_dir)
-    for f in os.listdir(SCHEMA_DIR):
-        translate(f, SCHEMA_DIR, OUTPUT_DIR)
+    try:
+        for f in os.listdir(SCHEMA_DIR):
+            translate(f, SCHEMA_DIR, OUTPUT_DIR)
+    except FileNotFoundError as e:
+        print(e)
