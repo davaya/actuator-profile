@@ -1,12 +1,16 @@
-# Creating an Actuator Profile
+# Creating an SBOM Actuator Profile
 The OpenC2 [use cases repo](https://github.com/oasis-tcs/openc2-usecases/tree/main/Actuator-Profile-Schemas)
 contains a step-by-step guide for creating a device schema from one or more actuator profiles,
-along with examples and test data for several devices.
+along with examples and test data for several devices.  [This repo](https://github.com/davaya/actuator-profile)
+is a quick introduction to that process, using the SBOM profile as an example
+and defining the JADN schema for an OpenC2 consumer device that performs the SBOM retrieval function.
 
-[This repo](https://github.com/davaya/actuator-profile) is intended to be a quick introduction to that
-process, focusing on a single-profile device and supplying background info on JADN and schema-based development.
-
-## 1. Use Cases
+## 1. Use Case Requirements
+The [SBOM AP Repo](https://github.com/oasis-tcs/openc2-ap-sbom) contains an actuator profile template but
+no significant profile content.  The issues form the basis for what the profile will need to support,
+in particular:
+* [Issue #34](https://github.com/oasis-tcs/openc2-ap-sbom/issues/34) - 'List Available SBOMs' and 'Return an SBOM' queries
+* 
 
 ## 2. JADN Tools
 ### 2.1 Make Artifacts
